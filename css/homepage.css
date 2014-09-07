@@ -1,15 +1,11 @@
-<<<<<<< HEAD
 
 body {
 	background: url("headerwallpaper.jpg");
-	background-size: auto 300px;
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 header {
 	text-align: center;
-	background-size: cover;
-	height: 300px;
-
 	}
 
 img {
