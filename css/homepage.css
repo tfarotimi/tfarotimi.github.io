@@ -1,0 +1,32 @@
+<<<<<<< HEAD
+
+body {
+	background: url("headerwallpaper.jpg");
+	background-size: auto 300px;
+	background-repeat: no-repeat;
+}
+header {
+	text-align: center;
+	background-size: cover;
+	height: 300px;
+
+	}
+
+img {
+	max-height:150px;
+	margin: 10px;
+	border:7px solid white;
+	border-radius:20%;
+	
+}
+
+h1 {
+	color: white;
+}
+
+p {
+	color: white;
+}
+=======
+ddddddddddddddddddddd
+>>>>>>> 90a4996398691f79bfd54eb3a75e048e77fcd0e5
