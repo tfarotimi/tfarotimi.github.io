@@ -4,7 +4,7 @@
     Tope Farotimi
   </title>
   <link rel="stylesheet" href = "css/homepage.css"/>
-
+  <script src="js/jquery-1.8.3.min.js"></script>
   
 </head>
 <body>
@@ -28,11 +28,15 @@
   </ul>
    </header>
 <div class = "maincontainer">
-  <p> 
-    	Hi I'm Tope. I will be building out my website as an ongoing project so check back periodically to see if I've made any updates!
+  <p id = "intro"> 
+    	Hi, I'm Tope! Welcome to my website. I will be building it out as an ongoing project so check back periodically to see what progress I've made.
     </p>
+
+   <button> Like this page! </button> 
 
 </div>
 
-
+<script>
+$("button").on("click", function(){alert("Thank you for liking!")});
+</script>
 </body>

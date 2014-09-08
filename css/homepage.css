@@ -31,10 +31,11 @@ h1 {
 	margin: 2px auto;
 }
 
-p {
+#intro {
 	font-family: Garamond;
 	margin: 10px;
 	color: white;
+	
 }
 
 .menu {
@@ -61,12 +62,38 @@ li:hover {
 	font-weight: bold;
 }
 
+li:active {
+	color:#003;
+}
+
 .menucontainer {
 	margin: 10px 40px;
 	padding: 10px;
 	display: inline;
 	background-color: rgba(100,0,0,0.7);
 	border-radius: 10%;
+}
+
+button {
+	background-color:rgba(256,256,256,0.1);
+	color:white;
+	padding: 10px;
+	font-family: Garamond;
+	font-size: 20px;
+	border-radius: 10%;
+	border: 1px solid white;
+}
+
+button:hover {
+	font-size: 36px;
+}
+
+button:active {
+	font-weight:bold;
+}
+
+button: click {
+	color:#300;
 }
 =======
 ddddddddddddddddddddd
