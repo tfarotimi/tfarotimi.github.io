@@ -40,12 +40,15 @@ h1 {
 
 .menu {
 	background-color: white;
-	padding: 10px;
+	overflow: hidden;
+	
 }
 
 ul {
-	text-align: center;
+	float: right;
+
 }
+
 li {
 	display: inline;
 	color: white;
@@ -67,7 +70,7 @@ li:active {
 }
 
 .menucontainer {
-	margin: 10px 40px;
+	margin: 0 30px;
 	padding: 10px;
 	display: inline;
 	background-color: rgba(100,0,0,0.7);
