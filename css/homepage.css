@@ -4,24 +4,70 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
+.maincontainer {
+	margin: auto;
+	text-align: center;
+	width:700px;
+	height: 100vh;
+	background-color: #002;
+}
+
 header {
 	text-align: center;
+	height: 300px;
 	}
 
 img {
-	max-height:150px;
-	margin: 10px;
-	border:7px solid white;
+	max-height:100px;
+	margin: 10px 0 0 0;
+	border:5px solid white;
 	border-radius:20%;
 	
 }
 
 h1 {
+	font-family: Garamond;
 	color: white;
+	margin: 2px auto;
 }
 
 p {
+	font-family: Garamond;
+	margin: 10px;
 	color: white;
+}
+
+.menu {
+	background-color: white;
+	padding: 10px;
+}
+
+ul {
+	text-align: center;
+}
+li {
+	display: inline;
+	color: white;
+	font-family: Garamond;
+	font-size: 25px;
+	text-align: right;
+}
+
+a {
+	text-decoration: none;	
+}
+
+li:hover {
+	color: #002;
+}
+
+.menucontainer {
+	margin: 10px 40px;
+	padding: 10px;
+	display: inline;
+	background-color:#400;
+	border-radius: 25%;
 }
 =======
 ddddddddddddddddddddd
