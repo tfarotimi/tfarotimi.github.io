@@ -27,8 +27,8 @@ img {
 
 h1 {
 	font-family: Garamond;
-	color: white;
-	margin: 2px auto;
+	color: rgb(0,64,100);
+	margin: 10px auto;
 }
 
 #intro {
@@ -40,12 +40,14 @@ h1 {
 
 .menu {
 	background-color: white;
-	overflow: hidden;
+	height: 60px;
+
 	
 }
 
 ul {
-	float: right;
+	position: absolute;
+	right:10px;
 
 }
 
@@ -97,6 +99,24 @@ button:active {
 
 button: click {
 	color:#300;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }
 =======
 ddddddddddddddddddddd
