@@ -3,13 +3,16 @@ body {
 	background-color: rgb(0,64,100);
 	background-size: cover;
 	background-repeat: no-repeat;
+	font-family: 'Hammersmith One', Garamond;
+	color: white;
+	text-align: center;
 }
 
 .maincontainer {
 	margin: auto;
 	text-align: center;
 	height: 100vh;
-	background-color: rgba(0,64,100,0.5);
+	
 }
 
 header {
@@ -26,21 +29,36 @@ img {
 }
 
 h1 {
-	font-family: Garamond;
+	
 	color: rgb(0,64,100);
 	margin: 10px auto;
+	font: 150px;
+	font-family: 'Russo One',cursive;
+	font-size: 50px;
+	margin: 20px;
 }
 
-#intro {
-	font-family: Garamond;
-	margin: 10px;
-	color: white;
+#about {
+	
+	text-align: center;
+	font-size: 30px;
+	line-height: 30px;
+	width: 60%;
+	margin: 0 auto;
+	
+	
+}
+
+.about {
+	text-align: center;
+
 	
 }
 
 .menu {
 	background-color: white;
-	height: 60px;
+
+	
 
 	
 }
@@ -48,15 +66,15 @@ h1 {
 ul {
 	position: absolute;
 	right:10px;
+	margin: 35px;
 
 }
 
 li {
 	display: inline;
-	color: white;
-	font-family: Garamond;
 	font-size: 25px;
 	text-align: right;
+	color: white;
 }
 
 a {
