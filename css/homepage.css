@@ -30,7 +30,7 @@ img {
 
 h1 {
 
-	color: rgba(0,32,100,.8);
+	color: rgba(0,64,100,.8);
 	margin: 10px;
 	font-family: 'Russo One',cursive;
 	font-size: 30px;
@@ -63,7 +63,7 @@ h1 {
 
 .menu {
 	background-color: white;
-	padding"
+	
 
 	
 
@@ -101,7 +101,7 @@ li:active {
 	margin: 0 30px;
 	padding: 10px;
 	display: inline;
-	background-color: rgba(100,0,0,0.7);
+	background-color: rgba(100,0,0,0.6);
 	border-radius: 10%;
 }
 
