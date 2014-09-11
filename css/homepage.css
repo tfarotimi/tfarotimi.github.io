@@ -1,6 +1,6 @@
 
 body {
-	background-color: rgb(0,64,128);
+	background-color: rgba(0,32,100,.8);
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-family: 'Hammersmith One', Garamond;
@@ -29,8 +29,8 @@ img {
 }
 
 h1 {
-	
-	color: rgb(0,64,128);
+
+	color: rgba(0,32,100,.8);
 	margin: 10px;
 	font-family: 'Russo One',cursive;
 	font-size: 30px;
