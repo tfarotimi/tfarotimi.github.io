@@ -3,23 +3,24 @@
   <title>
     Tope Farotimi
   </title>
+  
   <link rel="stylesheet" href = "css/homepage.css"/>
-
-<link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
-  <script src="js/jquery-1.8.3.min.js"></script>
-
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
   <script src="js/jquery-1.8.3.min.js"></script>
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
   
   
 </head>
 <body>
+
   <header >
   	
     
 
 
-    <div class = "menu cf">
+  <div class = "menu cf">
 
 
    <h1> TopeFarotimi.com</h1>
@@ -42,21 +43,32 @@
 
     </div>
    </header>
-   <img src = "img/tope.png"/>
+   <img id="tope" src = "img/tope.png"/>
 <div class = "about">
   <p id = "about"> 
     	Hi, I'm Tope<br /> <small>Welcome to my website. I am a technology analyst in the the Washington D.C metro area with a budding interest in web development and front-end design. This website is a platform for me to share information, discuss topics of interests and showcase personal projects that I will take on to expand my technical depth.</small>
     </p>
 
+     <p id = "maptitle"> My life story, told geospatially </p>
+    <div id="map">
+     
+    </div>
     <p> 
-
-      Drop me a note
+      Connect with me!
+    </p>
 
     
 
 </div>
 
-<script>
-$("button").on("click", function(){alert("Thank you for liking!")});
+<script type="text/javascript">
+var map = L.map('map').setView([51.505, -0.09], 13);
+
+
+L.tileLayer('http://{s}.tiles.mapbox.com/v3/tope010.jfh5ao9n/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18
+}).addTo(map);
 </script>
+
 </body>
