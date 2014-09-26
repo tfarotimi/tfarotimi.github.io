@@ -99,7 +99,9 @@ map.legendControl.addLegend(document.getElementById('legend').innerHTML);
 <script>
 $(document).ready(function() {
   $("section").css({height:$(window).height()});
-$(".maptitle").trigger("click")
+
+$(".maptitle").trigger("click");
+ $("#about").slideDown();
 });
 
 $(".maptitle").on("click",function() {
@@ -108,7 +110,7 @@ $(".maptitle").on("click",function() {
 });
 
 $(".about button").on("click", function() {
-  $("body").animate({scrollTop:$(".details").offset().top});
+  $("body").animate({scrollTop:$(".details").offset().top},1200);
 });
 </script>
 
