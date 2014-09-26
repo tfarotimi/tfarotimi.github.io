@@ -70,7 +70,7 @@ h1 {
 	color: white;
 	font-size: 20px;
 	padding: 10px;
-	overflow: auto;
+	overflow: hidden;
 	
 }
 
@@ -109,7 +109,6 @@ li {
 	margin: 0 30px;
 	padding: 10px;
 	visibility: hidden;
-	
 	
 	
 }
