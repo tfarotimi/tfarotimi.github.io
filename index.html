@@ -6,8 +6,9 @@
   
   <link rel="stylesheet" href = "css/homepage.css"/>
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
-  <link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
   <script src="js/jquery-1.8.3.min.js"></script>
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
   <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.0/mapbox.js'></script>
@@ -53,14 +54,14 @@
 
 <section class = "details">
   <div class="container">
-   <p> 
+   <p id = "bio"> 
       I am 22 years old and I have a budding interest in web development and front-end design. This website is a platform for me to practice my design and coding skills, discuss topics of interests and showcase personal projects.
   </p> 
 
 
  
 
-  <button class="maptitle">Click to see my life story, told geospatially </button>
+  <p class="maptitle">My life story, told geospatially </p>
 
 </div>
 
@@ -99,15 +100,11 @@ map.legendControl.addLegend(document.getElementById('legend').innerHTML);
 <script>
 $(document).ready(function() {
   $("section").css({height:$(window).height()});
+  $(this).scrollTop(0);
 
-$(".maptitle").trigger("click");
  $("#about").slideDown();
 });
 
-$(".maptitle").on("click",function() {
-  $("#map").slideToggle('fast',function() {$("map").load()});
-  
-});
 
 $(".about button").on("click", function() {
   $("body").animate({scrollTop:$(".details").offset().top},1200);
