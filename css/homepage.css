@@ -15,6 +15,9 @@ body {
 	
 }
 
+.about {
+	
+}
 header {
 	text-align: center;
 
@@ -30,6 +33,8 @@ header {
 	
 }
 
+
+
 .desaturate { -webkit-filter: grayscale(100%);
 -moz-filter: grayscale(100%);
 filter: grayscale(100%);
@@ -37,7 +42,7 @@ filter: grayscale(100%);
 
 h1 {
 
-	color: rgba(255,255,255,1);
+	color: rgba(0,0,0,.75);
 	margin: 10px;
 	font-size: 30px;
 	text-align: center;
@@ -51,8 +56,13 @@ h1 {
 
 
 
+.down {
+	visibility:hidden;
+}
 
-
+.visible {
+	visibility:visible;
+}
 
 #about {
 	
@@ -61,6 +71,8 @@ h1 {
 	line-height: 50px;
 	width: 60%;
 	margin: 0 auto 50px auto;
+	visiblity:hidden;
+
 	
 	
 }
@@ -71,7 +83,7 @@ h1 {
 	font-size: 20px;
 	padding: 10px;
 	margin-bottom: 20px;
-	overflow: auto;
+	overflow: hidden;
 
 	
 }
@@ -85,8 +97,7 @@ p {
 	text-align: left;
 	line-height: 30px;
 }
-.menu {
-	background-color: rgba(0,0,0,.75);
+
 
 	
 
@@ -168,9 +179,11 @@ button:hover {
 
 #map { 
 	margin: 20px auto;
-	height: 600px;
-	width: 80%;
+	width: 100%;
 	border: 1px solid rgba(0,0,0,.75);
+	position: relative;
+	height:400px;
+
 	
 	
 
@@ -189,6 +202,8 @@ button {
 	margin: auto;
 	margin-top: 150px;
 }
+
+
 
 
 ddddddddddddddddddddd

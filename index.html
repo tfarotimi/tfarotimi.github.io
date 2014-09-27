@@ -48,7 +48,7 @@
     	Hi, I'm Tope<br /> <small>Welcome to my website! </small>
   </p>
 
-  <button label = "Scroll Down to Learn More" class ="down"> About Me </button>
+  <button class ="down"> About Me </button>
 </section>
   
 
@@ -99,14 +99,31 @@ map.legendControl.addLegend(document.getElementById('legend').innerHTML);
 
 <script>
 $(document).ready(function() {
+
   $("section").css({height:$(window).height()});
   $(this).scrollTop(0);
 
- $("#about").slideDown();
+  $("#about").slideUp('fast');
+  $("#about").addClass("visible");
+  $("#about").slideDown(1200);
+
+ 
+ 
+ $(".down").slideUp('fast');
+  $(".down").addClass("visible");
+  $(".down").slideDown(1200);
+
+  $("img").fadeIn(1200);
+  $("h1").fadeIn(1200);
+
+ 
+
+
 });
 
 
 $(".about button").on("click", function() {
+
   $("body").animate({scrollTop:$(".details").offset().top},1200);
 });
 </script>
