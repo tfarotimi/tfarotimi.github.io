@@ -3,12 +3,14 @@
   <title>
     Tope Farotimi
   </title>
-  
-  <link rel="stylesheet" href = "css/homepage.css"/>
+   <link rel="stylesheet" href="css/bootstrap.css"/>
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
   <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href = "css/homepage.css"/>
+ 
+  <link rel="stylesheet" href="css/font-awesome.css"/>
   <script src="js/jquery-1.8.3.min.js"></script>
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
   <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.0/mapbox.js'></script>
@@ -23,21 +25,8 @@
   <header >
 
   <div class = "menu cf">
-    <h1> TopeFarotimi.com</h1>
-       <ul>
-       	
-      	 <a href ="index.html"><li> About Me </li></a>
-     
-
-      	
-      	 <a class="blog" href ="blog.html"><li> Blog </li></a>
-      	
-
-      	
-      	 <a href ="projects.html"><li> Projects </li></a>
-        
-
-      </ul>
+    <a href="#"><h1> Tope Farotimi</h1></a>
+       
   </div>
 
    </header>
@@ -48,14 +37,14 @@
     	Hi, I'm Tope<br /> <small>Welcome to my website! </small>
   </p>
 
-  <button class ="down"> About Me </button>
+  <i class="fa fa-angle-down fa-5x down"></i>
 </section>
   
 
 <section class = "details">
   <div class="container">
    <p id = "bio"> 
-      I am 22 years old and I have a budding interest in web development and front-end design. This website is a platform for me to practice my design and coding skills, discuss topics of interests and showcase personal projects.
+      I am 22 years old and I have a budding interest in web development and front-end design. This website is a platform for me to practice my design and coding skills, discuss topics of interest and showcase personal projects.
   </p> 
 
 
@@ -75,9 +64,15 @@
         <span class = "legendbox" style='background:rgba(0,255,0,0.5);'><label> Green line = Migrations</label></span>   
       </div>
 </div>
+
+<i class="fa fa-angle-down fa-5x downpage3"></i>
 </section>
 
-
+<section class="page3"> 
+<div class="container">
+  <p> In progress...</p>
+</div>
+</section>
 
 
 
@@ -108,23 +103,19 @@ $(document).ready(function() {
   $("#about").slideDown(1200);
 
  
- 
- $(".down").slideUp('fast');
-  $(".down").addClass("visible");
-  $(".down").slideDown(1200);
-
-  $("img").fadeIn(1200);
-  $("h1").fadeIn(1200);
-
- 
 
 
 });
 
 
-$(".about button").on("click", function() {
+$(".down").on("click", function() {
 
   $("body").animate({scrollTop:$(".details").offset().top},1200);
+});
+
+$(".downpage3").on("click", function() {
+
+  $("body").animate({scrollTop:$(".page3").offset().top},1200);
 });
 </script>
 
@@ -143,5 +134,5 @@ $(".about button").on("click", function() {
   ga('send', 'pageview');
 
 </script>
-
+<script src="js/bootstrap.js"
 </body>
