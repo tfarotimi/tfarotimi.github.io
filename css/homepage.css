@@ -113,6 +113,8 @@ h1:hover {
 	cursor: pointer;
 }
 .fa-angle-down:click {
+	position: relative;
+	bottom: 20px;
 	color: rgba(0,64,128,.8);
 }
 
